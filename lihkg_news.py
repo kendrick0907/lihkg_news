@@ -22,8 +22,11 @@ sleep(2)
 
 # loop and find the class of all boxes which include the username, comment, number of likes and dislikes etc.
 lihkg_html = BeautifulSoup(driver.page_source,'html.parser')
-result_list = lihkg_html.find_all('div', {'class':'_14BnVEj9rQ5VQKmrIqn9Qj'})
+#result_list = lihkg_html.find_all('div', {'class':'_14BnVEj9rQ5VQKmrIqn9Qj'})
+result_list = lihkg_html.find_all('div', {'class': 'vv9keWAXpwoonDah6rSIU _1KV65JcPoDUFZ4o3OEqn4R'})
 
 for result in result_list: 
     title_ls.append(result.find('span',{'_20jopXBFHNQ9FUbcGHLcHH'}).get_text())
+    url_ls.append(result.find('a',{'_2A_7bGY9QAXcGu1neEYDJB'})['href'])
 
+# print(url_ls)
