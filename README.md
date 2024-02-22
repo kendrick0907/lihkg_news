@@ -1,6 +1,9 @@
 # lihkg_news
 News Scrapper on LIHKG
 
+[Version 1.0] Link Scrapping
+- links of the trending news can also be scrapped
+
 [Version 1.0] First Launch
 - user can scrape the title of trending news topic on LIHKG
 
